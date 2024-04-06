@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.color-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.colorselecao {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 50px;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 30px;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+.color:active {
+    transform: 0.9;
+}
+
+.color.selected:hover {
+    transform: scale(1);
+  }
+  
+.color.selected:active {
+    transform: scale(0.8);
+  }
+
+.selected-colors {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.power-info {
+    text-align: center;
+}
+
+.power-details {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+#power-gif {
+    max-width: 400px;
+    max-height: auto;
+}
+
+/* Estilos padrão */
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 600px) {
+    .color-selector {
+      flex-direction: column; /* Altera o layout para coluna */
+      align-items: center; /* Centraliza os elementos */
+    }
+  
+    .colorselecao {
+      width: 80px; /* Reduz o tamanho das cores selecionáveis */
+      height: 80px; /* Reduz o tamanho das cores selecionáveis */
+      border-radius: 40px; /* Ajusta o raio da borda para manter a forma circular */
+    }
+  
+    .color {
+      width: 80px; /* Reduz o tamanho das cores selecionadas */
+      height: 80px; /* Reduz o tamanho das cores selecionadas */
+      border-radius: 20px; /* Ajusta o raio da borda para manter a forma circular */
+    }
+  
+    .selected-colors {
+      flex-direction: column; /* Altera o layout para coluna */
+    }
+  
+    .selected-color {
+      width: 50px; /* Reduz o tamanho das cores selecionadas */
+      height: 50px; /* Reduz o tamanho das cores selecionadas */
+      border-radius: 10px; /* Ajusta o raio da borda para manter a forma circular */
+    }
+  
+    #power-gif {
+      max-width: 300px; /* Reduz o tamanho máximo do gif */
+    }
+  }
+  
